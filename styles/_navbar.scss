@@ -1,0 +1,63 @@
+$primary: #9926f0;
+$secondary: #d122e3;
+
+//Navbar
+.navHead {
+    background: linear-gradient(
+        to right,
+        rgba($primary, 0.95),
+        rgba($secondary, 0.95)
+    );
+
+    li {
+        padding: 0 0.7rem;
+    }
+}
+
+//Button
+.btn-rounded {
+    padding: 0.9rem 4.4rem 0.9rem 1.2rem;
+    font-weight: 500;
+    margin: 0%;
+    position: relative;
+    border: 0.1rem solid rgba(white, 0.6);
+    background-color: white;
+
+    span {
+        position: absolute;
+        background-color: $primary;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+    }
+
+    &:hover {
+        background: linear-gradient(
+            to right,
+            rgba($primary, 0.95),
+            rgba($secondary, 0.95)
+        );
+        color: white;
+
+        span {
+            background-color: rgba(black, 0.6);
+        }
+    }
+    i {
+        color: white;
+        font-size: 1rem;
+        padding-top: 0.7rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-rounded {
+        display: block;
+        position: relative;
+        left: 30%;
+        margin-top: 1.5rem;
+    }
+}
