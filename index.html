@@ -11,15 +11,17 @@
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous"
         />
-        <script
-            src="https://kit.fontawesome.com/fcfe89c7ac.js"
-            crossorigin="anonymous"
-        ></script>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap"
+            rel="stylesheet"
+        />
+       <link rel="stylesheet" href="/dist/css/glightbox.css">
         <link rel="stylesheet" href="/styles/style.css" />
     </head>
     <body>
         <!--Navbar-->
-        <section class="navHead">
+        <section class="navHead sticky-md-top">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
                     <a class="navbar-brand" href="#">
@@ -37,12 +39,12 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div
-                        class="collapse navbar-collapse justify-content-end "
+                        class="collapse navbar-collapse justify-content-end"
                         id="navbarNav"
                     >
                         <ul class="navbar-nav text-center">
                             <li class="nav-item">
-                                <a class="nav-link fw-bold active" href="#"
+                                <a class="nav-link fw-bold active" href="#home"
                                     >Home</a
                                 >
                             </li>
@@ -81,8 +83,75 @@
         </section>
 
         <!--Hero Section-->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="row align-items-center text-white">
+                    <div class="col-md-7 text-md-start text-center">
+                        <h1>Hey! I'm Patrick</h1>
+                        <p class="lead">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Laudantium libero, eum facilis odio molestias.
+                        </p>
+                        <button
+                            type="button"
+                            class="rounded-pill btn-rounded fw-bolder"
+                        >
+                            Get in Touch
+                            <span><i class="fa-solid fa-arrow-right"></i></span>
+                        </button>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="video-box position-relative">
+                            <img
+                                src="/images/arts/intro-section-illustration.png"
+                                alt="arts"
+                                class="img-fluid"
+                            />
 
+                            <a
+                                href="#"
+                                class="translate-middle start-50 top-50 position-absolute glightbox"
+                            >
+                                <span
+                                    ><i class="fa-solid fa-circle-play"></i
+                                ></span>
+                                <span
+                                    class="border-animation border-animation-border-1"
+                                ></span>
+                                <span
+                                    class="border-animation border-animation-border-2"
+                                ></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                    fill="#fff"
+                    fill-opacity="1"
+                    d="M0,224L48,202.7C96,181,192,139,288,149.3C384,160,480,224,576,224C672,224,768,160,864,128C960,96,1056,96,1152,117.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                ></path>
+            </svg>
+        </section>
 
+        <!--Javascipt-->
+        <script src="dist/js/glightbox.min.js"></script>
+        <script type="text/javascript">
+            const lightbox = GLightbox({
+                touchNavigation: true,
+                href: "https://www.youtube.com/watch?v=J9lS14nM1xg",
+                type: "video",
+                source: "youtube", //vimeo, youtube or local
+                width: 900,
+                autoPlayVideos: "true",
+            });
+        </script>
+
+        <script
+            src="https://kit.fontawesome.com/fcfe89c7ac.js"
+            crossorigin="anonymous"
+        ></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

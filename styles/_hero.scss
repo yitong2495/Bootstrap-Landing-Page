@@ -1,0 +1,69 @@
+.hero {
+    background: linear-gradient(
+        to right,
+        rgba($primary, 0.95),
+        rgba($secondary, 0.95)
+    );
+    padding: 6rem 0 0 0;
+    min-height: 100vh;
+
+    h1 {
+        font-size: 4.5rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    p {
+        font-size: 1.4rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        margin: 1.2rem 0 1.5rem 0;
+        line-height: 1.5;
+    }
+    i {
+        font-size: 1rem;
+        color: white;
+    }
+
+}
+
+
+
+.video-box{
+
+    span{
+        i{
+            font-size: 6rem;
+            color: $secondary;
+        }
+    }
+
+    .border-animation {
+        position: absolute;
+        top: 0%;
+        left: 0%; 
+        width: 6rem;
+        height: 6rem;
+        border: 0.55rem solid white;
+        border-radius: 50%;
+        animation: pluse 1.5s linear infinite;
+    }
+    .border-animation-border-1{
+        animation-delay: 1s;
+    }
+    .border-animation-border-2{
+        animation-delay: 1.5s;
+    }
+
+}
+
+@keyframes pluse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}

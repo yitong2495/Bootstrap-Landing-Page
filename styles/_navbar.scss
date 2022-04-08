@@ -8,10 +8,12 @@ $secondary: #d122e3;
         rgba($primary, 0.95),
         rgba($secondary, 0.95)
     );
+    box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15);
 
     li {
         padding: 0 0.7rem;
     }
+
 }
 
 //Button
@@ -25,7 +27,7 @@ $secondary: #d122e3;
 
     span {
         position: absolute;
-        background-color: $primary;
+        background-color: $primary; 
         width: 2.5rem;
         height: 2.5rem;
         border-radius: 50%;
