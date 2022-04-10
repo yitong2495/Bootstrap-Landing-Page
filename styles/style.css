@@ -135,6 +135,86 @@
   }
 }
 
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  background-color: #9926f0;
+  margin: 0 auto;
+}
+
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  padding-top: 0.5rem;
+  height: 0.2rem;
+  display: block;
+  background-color: #9926f0;
+  margin: 0 auto;
+}
+
+.companies {
+  padding: 0 0 5rem 0;
+}
+
+.companies .logo-box {
+  max-width: 100%;
+  height: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.companies .logo-box img {
+  height: 100%;
+}
+
+.services h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.services h2 h3 {
+  font-size: 2rem;
+}
+
+.border-right {
+  border-right: 0.1rem solid #c6c6c6;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .border-right {
+    border: none;
+  }
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #9926f0;
+}
+
+.service-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  color: #9926f0;
+}
+
+.service-btn {
+  border-color: #9926f0;
+}
+
+@media (max-width: 576px) {
+  .illustration {
+    display: none;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
