@@ -12285,6 +12285,44 @@ fieldset:disabled .btn {
   transition-property: all;
 }
 
+.started {
+  background-color: #e9ecef;
+  padding: 4rem 0;
+}
+
+.started .gradient {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(153, 38, 240, 0.95)), to(rgba(209, 34, 227, 0.95)));
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+}
+
+.started .cta-info {
+  padding: 3rem;
+  margin: 1rem 0;
+}
+
+.cta-info__list {
+  list-style-type: none;
+  display: block;
+  padding: 0.5rem 0 0 0.5rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  color: #9926f0;
+}
+
+.form {
+  padding: 3rem;
+}
+
+.form button {
+  color: white;
+  font-family: "Poppins",sans-serif;
+}
+
 * {
   padding: 0;
   margin: 0;
