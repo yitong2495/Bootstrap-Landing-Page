@@ -1,0 +1,17 @@
+{
+  "name": "patrix2",
+  "version": "1.0.0",
+  "description": "HTML,CSS,BOOSTRAP,SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "patrix"
+  ],
+  "author": "yitong xie",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
